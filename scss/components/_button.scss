@@ -1,0 +1,56 @@
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  outline: 0;
+  background: transparent;
+  height: 32px;
+  font-size: 14px;
+  padding: 0 11px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #111;
+  user-select: none;
+}
+
+//size
+.btn-sm{
+
+}
+
+.btn-md{
+
+}
+
+.btn-lg{
+
+}
+
+//color
+.btn-primary{
+
+}
+
+.btn-outline{
+  border: 1px solid #d1d1d1;
+  color: #767676;
+  transition: 0.2s;
+  &:hover{
+    border-color: #111;
+    color: #111;
+  }
+}
+
+.btn-confirm{
+  background: #3cb46e;
+  color: #fff;
+  transition: 0.2s;
+  &:hover{
+    background: #37a866;
+  }
+
+  &:active{
+    background: #299253;
+  }
+}
