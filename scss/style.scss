@@ -1,3 +1,12 @@
-body{
+@charset "UTF-8";
 
-}
+//base
+@import "./base/reset";
+@import "./base/normalize";
+@import "base/common";
+
+//components
+@import "components/button";
+
+//pages
+@import "./pages/main";
