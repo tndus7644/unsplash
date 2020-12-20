@@ -1,4 +1,4 @@
-.btn{
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,51 +12,80 @@
   border-radius: 4px;
   color: #111;
   user-select: none;
+  svg{
+    width: 15px;
+    fill:#767676;
+  }
 }
 
 //size
-.btn-sm{
+.btn-sm {
 
 }
 
-.btn-md{
+.btn-md {
 
 }
 
-.btn-lg{
+.btn-lg {
 
 }
 
 //color
-.btn-primary{
+.btn-primary {
 
 }
 
-.btn-outline{
+.btn-outline {
   border: 1px solid #d1d1d1;
   color: #767676;
   transition: 0.2s;
-  &:hover{
+
+  &:hover {
     border-color: #111;
     color: #111;
   }
 }
 
-.btn-confirm{
+.btn-confirm {
   background: #3cb46e;
   color: #fff;
   transition: 0.2s;
-  &:hover{
+
+  &:hover {
     background: #37a866;
   }
 
-  &:active{
+  &:active {
     background: #299253;
   }
 }
 
-.btn-popup{
-  cursor:pointer;
+.gallery-item {
+  .gallery-content {
+    .gallery-btn {
+      padding: 0 11px;
+      background: rgba(255, 255, 255, 0.8);
+      transition: 0.2s;
+
+      svg {
+        width: 15px;
+        fill: #767676;
+      }
+
+      &:hover {
+        background: #fff;
+
+        svg {
+          fill: #111;
+        }
+      }
+    }
+  }
+}
+
+.btn-popup {
+  cursor: pointer;
   border-radius: 4px;
   display: flex;
   align-items: center;

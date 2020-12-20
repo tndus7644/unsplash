@@ -384,6 +384,9 @@ input {
   border-radius: 4px;
   color: #111;
   user-select: none; }
+  .btn svg {
+    width: 15px;
+    fill: #767676; }
 
 .btn-outline {
   border: 1px solid #d1d1d1;
@@ -401,6 +404,18 @@ input {
     background: #37a866; }
   .btn-confirm:active {
     background: #299253; }
+
+.gallery-item .gallery-content .gallery-btn {
+  padding: 0 11px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: 0.2s; }
+  .gallery-item .gallery-content .gallery-btn svg {
+    width: 15px;
+    fill: #767676; }
+  .gallery-item .gallery-content .gallery-btn:hover {
+    background: #fff; }
+    .gallery-item .gallery-content .gallery-btn:hover svg {
+      fill: #111; }
 
 .btn-popup {
   cursor: pointer;
@@ -493,6 +508,8 @@ input {
           border-radius: 4px;
           font-size: 14px;
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+          .us-header .gnb nav .nav-more .dropdown.is-active {
+            display: block; }
           .us-header .gnb nav .nav-more .dropdown::after {
             content: '';
             background: #111;
@@ -658,6 +675,96 @@ input {
       background: #111;
       width: 100%;
       color: #fff; }
+
+.gallery-popup {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center; }
+  .gallery-popup.is-active {
+    display: flex; }
+  .gallery-popup .gallery-popup-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1; }
+  .gallery-popup .gallery-popup-contents {
+    width: 100rem;
+    height: 850px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 15px; }
+    .gallery-popup .gallery-popup-contents .top-info {
+      height: 20%;
+      display: flex;
+      justify-content: space-between; }
+      .gallery-popup .gallery-popup-contents .top-info .member-info {
+        display: flex; }
+        .gallery-popup .gallery-popup-contents .top-info .member-info .member-account-thumb {
+          padding-right: 10px; }
+        .gallery-popup .gallery-popup-contents .top-info .member-info .member-account-name span {
+          color: #111; }
+        .gallery-popup .gallery-popup-contents .top-info .member-info .member-account-name p {
+          font-size: 13px;
+          transition: 0.2s; }
+        .gallery-popup .gallery-popup-contents .top-info .member-info .member-account-name:hover p {
+          color: #111; }
+      .gallery-popup .gallery-popup-contents .top-info .gallery-popup-info-btn {
+        display: flex; }
+        .gallery-popup .gallery-popup-contents .top-info .gallery-popup-info-btn .gallery-btn {
+          border: 1px solid #d1d1d1;
+          margin-right: 8px;
+          transition: 0.2s; }
+          .gallery-popup .gallery-popup-contents .top-info .gallery-popup-info-btn .gallery-btn:hover {
+            border: 1px solid #111; }
+            .gallery-popup .gallery-popup-contents .top-info .gallery-popup-info-btn .gallery-btn:hover svg {
+              fill: #111; }
+        .gallery-popup .gallery-popup-contents .top-info .gallery-popup-info-btn .download-free-btn {
+          background: #3cb46e;
+          color: #fff;
+          transition: 0.2s; }
+          .gallery-popup .gallery-popup-contents .top-info .gallery-popup-info-btn .download-free-btn svg {
+            fill: #fff;
+            width: 24px; }
+          .gallery-popup .gallery-popup-contents .top-info .gallery-popup-info-btn .download-free-btn:hover {
+            background: #33a763; }
+          .gallery-popup .gallery-popup-contents .top-info .gallery-popup-info-btn .download-free-btn:active {
+            background: #299255; }
+    .gallery-popup .gallery-popup-contents .img-contents {
+      height: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .gallery-popup .gallery-popup-contents .bottom-info-btn {
+      height: 20%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end; }
+      .gallery-popup .gallery-popup-contents .bottom-info-btn .gallery-btn {
+        margin-left: 8px;
+        border: 1px solid #d1d1d1;
+        transition: 0.2s; }
+        .gallery-popup .gallery-popup-contents .bottom-info-btn .gallery-btn svg {
+          margin-right: 5px; }
+        .gallery-popup .gallery-popup-contents .bottom-info-btn .gallery-btn:hover {
+          border: 1px solid #111; }
+          .gallery-popup .gallery-popup-contents .bottom-info-btn .gallery-btn:hover svg {
+            fill: #111; }
+    .gallery-popup .gallery-popup-contents .close-btn {
+      position: absolute;
+      top: 5px;
+      left: 5px; }
+      .gallery-popup .gallery-popup-contents .close-btn svg {
+        width: 24px;
+        fill: #fff; }
 
 .main-banner-top {
   width: 100%;

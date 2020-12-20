@@ -1,5 +1,5 @@
 //login-popup
-.login-popup{
+.login-popup {
   position: fixed;
   display: none;
   top: 0;
@@ -9,20 +9,21 @@
   justify-content: center;
   align-items: center;
 
-  &.is-active{
+  &.is-active {
     display: flex;
   }
 
-  .login-popup-bg{
+  .login-popup-bg {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     z-index: -1;
   }
-  .contents{
+
+  .contents {
     width: 900px;
     height: 670px;
     background: #fff;
@@ -30,34 +31,40 @@
     text-align: center;
     padding: 36px 150px;
 
-    .login-info{
-      h2{
+    .login-info {
+      h2 {
         margin: 20px 0;
         font-weight: 500;
         font-size: 28px;
       }
     }
-    .login-facebook{
+
+    .login-facebook {
       width: 100%;
       background: #1778f2;
       margin: 30px 0;
-      a{
+
+      a {
         color: #fff;
         display: flex;
         align-items: center;
-        svg{
+
+        svg {
           margin-right: 12px;
-          fill:#fff;
+          fill: #fff;
         }
       }
     }
-    .email-input{
+
+    .email-input {
       text-align: left;
       margin-bottom: 30px;
-      label{
+
+      label {
         line-height: 1.6;
       }
-      input{
+
+      input {
         width: 100%;
         height: 40px;
         padding: 5px 7px;
@@ -65,18 +72,22 @@
         border-radius: 4px;
       }
     }
-    .password-input{
+
+    .password-input {
       text-align: left;
-      label{
+
+      label {
         display: flex;
         line-height: 1.6;
         justify-content: space-between;
-        a{
+
+        a {
           text-decoration: underline;
           border-style: solid;
         }
       }
-      input{
+
+      input {
         width: 100%;
         height: 40px;
         padding: 5px 7px;
@@ -84,11 +95,158 @@
         border-radius: 4px;
       }
     }
-    .login-check{
+
+    .login-check {
       margin: 30px 0;
       background: #111;
       width: 100%;
       color: #fff;
+    }
+  }
+}
+
+//gallery-popup
+.gallery-popup {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  &.is-active {
+    display: flex;
+  }
+
+  .gallery-popup-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+
+  .gallery-popup-contents {
+    width: 100rem;
+    height: 850px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 15px;
+
+    .top-info {
+      height: 20%;
+      display: flex;
+      justify-content: space-between;
+
+      .member-info {
+        display: flex;
+
+        .member-account-thumb {
+          padding-right: 10px;
+        }
+
+        .member-account-name {
+          span {
+            color: #111;
+          }
+
+          p {
+            font-size: 13px;
+            transition: 0.2s;
+          }
+
+          &:hover{
+            p{
+              color: #111;
+            }
+          }
+        }
+      }
+
+      .gallery-popup-info-btn {
+        display: flex;
+
+        .gallery-btn {
+          border: 1px solid #d1d1d1;
+          margin-right: 8px;
+          transition: 0.2s;
+
+          &:hover {
+            border: 1px solid #111;
+
+            svg {
+              fill: #111;
+            }
+          }
+        }
+
+        .download-free-btn {
+          background: #3cb46e;
+          color: #fff;
+          transition: 0.2s;
+
+          svg {
+            fill: #fff;
+            width: 24px;
+          }
+
+          &:hover {
+            background: #33a763;
+          }
+
+          &:active{
+            background: #299255;
+          }
+        }
+      }
+    }
+
+    .img-contents {
+      height: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bottom-info-btn {
+      height: 20%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      .gallery-btn {
+        margin-left: 8px;
+        border: 1px solid #d1d1d1;
+        transition: 0.2s;
+
+        svg {
+          margin-right: 5px;
+        }
+
+        &:hover {
+          border: 1px solid #111;
+
+          svg {
+            fill: #111;
+          }
+        }
+      }
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+
+      svg {
+        width: 24px;
+        fill: #fff;
+      }
     }
   }
 }
