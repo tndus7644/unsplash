@@ -9,14 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../scss/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
     <script src="../assets/script/script.js"></script>
 </head>
 <body>
-<div id="wrap">
+<!--us-header-->
+<div class="top-area">
     <header class="us-header">
         <a href="#" class="logo">
-            <svg width="32" height="32" class="_1Jlgk" version="1.1" viewBox="0 0 32 32" aria-labelledby="unsplash-home"
+            <svg width="32" height="32" class="_1Jlgk" version="1.1" viewBox="0 0 32 32"
+                 aria-labelledby="unsplash-home"
                  aria-hidden="false"><title id="unsplash-home">Unsplash Home</title>
                 <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
             </svg>
@@ -90,45 +93,48 @@
                     </div>
                 </div>
             </nav>
+            <div class="btn btn-outline submit-photo">Submit a photo</div>
             <div class="btn btn-outline submit-photo">
                 <p>Submit a photo</p>
             </div>
-                <div class="login-popup">
-                    <div class="contents">
-                        <div class="popup-logo">
-                            <svg width="64" height="64" class="_1Jlgk" version="1.1" viewBox="0 0 32 32" aria-labelledby="unsplash-home"
-                                 aria-hidden="false"><title id="unsplash-home">Unsplash Home</title>
-                                <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
-                            </svg>
-                        </div>
-                        <div class="login-info">
-                            <h2>Login</h2>
-                            <p>To submit a photo, login.</p>
-                        </div>
-                        <div class="login-facebook btn-popup">
-                            <a href="#">
+            <div class="login-popup">
+                <div class="login-popup-bg"></div>
+                <div class="contents">
+                    <div class="popup-logo">
+                        <svg width="64" height="64" class="_1Jlgk" version="1.1" viewBox="0 0 32 32"
+                             aria-labelledby="unsplash-home"
+                             aria-hidden="false"><title id="unsplash-home">Unsplash Home</title>
+                            <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+                        </svg>
+                    </div>
+                    <div class="login-info">
+                        <h2>Login</h2>
+                        <p>To submit a photo, login.</p>
+                    </div>
+                    <div class="login-facebook btn-popup">
+                        <a href="#">
                             <svg width="18" height="18" class="_2gauX _33ITs hIMT1 _33ITs" version="1.1"
                                  viewBox="0 0 32 32" aria-hidden="false">
                                 <path d="M32 16.1c0-8.9-7.2-16-16-16S0 7.2 0 16.1c0 8 5.9 14.6 13.5 15.8V20.7H9.4v-4.6h4.1v-3.5c0-4 2.4-6.2 6-6.2 1.8 0 3.6.3 3.6.3v3.9h-2c-2 0-2.6 1.2-2.6 2.5v3h4.4l-.7 4.6h-3.7v11.2C26.1 30.7 32 24.1 32 16.1"></path>
                             </svg>
                             Login with Facebook
-                            </a>
-                        </div>
-                        <p>OR</p>
-                        <div class="email-input">
-                            <label for="Email">Email</label>
-                            <input type="text" id="email">
-                        </div>
-                        <div class="password-input">
-                            <label for="password">Password
-                            <a href="#">Forgot your password?</a>
-                            </label>
-                            <input type="text" id="password">
-                        </div>
-                        <div class="login-check btn-popup">Login</div>
-                        <p>Don't have an account?<span><a href="#">Join</a></span></p>
+                        </a>
                     </div>
+                    <p>OR</p>
+                    <div class="email-input">
+                        <label for="Email">Email</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="password-input">
+                        <label for="password">Password
+                            <a href="#">Forgot your password?</a>
+                        </label>
+                        <input type="text" id="password">
+                    </div>
+                    <div class="login-check btn-popup">Login</div>
+                    <p>Don't have an account?<span><a href="#">Join</a></span></p>
                 </div>
+            </div>
             <div class="member-area">
                 <a href="#" class="btn btn-login">login</a>
                 <a href="#" class="btn btn-confirm">Join free</a>
@@ -137,6 +143,7 @@
             </div>
         </div>
     </header>
+    <!--lnb-->
     <div class="lnb">
         <a href="#" class="editorial">Editorial</a>
         <div class="topics">
@@ -165,6 +172,283 @@
         </div>
         <a href="#" class="all">View all</a>
     </div>
+</div>
+<!--main-banner-top-->
+<div class="main-banner-top">
+    <div class="banner-contents">
+        <div class="banner-caption">
+            <h1>Unsplash</h1>
+            <p>The internet’s source of freely-usable images.<br>
+                Powered by creators everywhere.</p>
+        </div>
+        <div class="search-photos">
+            <label for="search-photos">
+                <div class="search-photos-icon">
+                    <svg width="24" height="24" class="_3cOFI _2Jh5K _2spGU" version="1.1" viewBox="0 0 32 32"
+                         aria-hidden="false">
+                        <path d="M21.9 20.1c1.3-1.7 2-3.8 2-6.1 0-5.5-4.5-10-10-10C8.5 4 4 8.5 4 14s4.5 10 10 10c2.3 0 4.4-.8 6.1-2l6.1 6.1 1.9-1.9-6.2-6.1zM14 21.3c-4.1 0-7.3-3.3-7.3-7.3S9.9 6.7 14 6.7s7.3 3.3 7.3 7.3-3.3 7.3-7.3 7.3z"></path>
+                    </svg>
+                </div>
+                <input type="search" id="search-photos" placeholder="Search free high-resolution photos">
+            </label>
+        </div>
+        <div class="trending-link">
+            <p>Trending:</p>
+            <ul>
+                <li><a href="#">flower,</a></li>
+                <li><a href="#">Wallpapers,</a></li>
+                <li><a href="#">backgrounds,</a></li>
+                <li><a href="#">happy,</a></li>
+                <li><a href="#">love</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom-caption">
+        <div class="photo-writer">
+            Photo of the Day <span>by</span>
+            <a href="#">Toa Heftiba</a>
+        </div>
+        <div class="license-read-more">
+            Read more about the
+            <a href="#">Unsplash License</a>
+        </div>
+        <div class="squarespace-link">
+            <img src="https://images.unsplash.com/file-1606177908946-d1eed1cbe4f5image" alt="">
+            <a href="#">Start your website with Squarespace today.</a>
+        </div>
+    </div>
+</div>
+<!--  gallery  -->
+<div class="gallery">
+    <div class="gallery-popup">
+        <div class="gallery-popup-bg"></div>
+        <div class="gallery-popup-contents">
+            <div class="top-info">
+                <div class="member-info">
+                    <a class="member-account-thumb" href="#">
+                        <img src="../assets/img/member_img.jpg" alt="">
+                    </a>
+                    <div class="member-account-name">
+                        <a href="#">
+                            <span>Chewy</span>
+                            <p>Pets Bring Us Together</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-popup-info-btn">
+                    <button class="btn gallery-btn">
+                        <svg width="32" height="32" class="BWSrD" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                            <path d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z"></path>
+                        </svg>
+                    </button>
+                    <button class="btn gallery-btn">
+                        <svg width="32" height="32" class="_2rdbO" version="1.1" viewBox="0 0 32 32"
+                             aria-hidden="false">
+                            <path d="M14 3h4v26h-4zM29 14v4h-26v-4z"></path>
+                        </svg>
+                    </button>
+                    <button class="btn download-free-btn">
+                        Download free
+                        <svg width="32" height="32" class="fpkc9" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                            <path d="M9.9 11.5l6.1 6.1 6.1-6.1 1.9 1.9-8 8-8-8 1.9-1.9z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="img-contents">
+                <img src="" alt="">
+            </div>
+            <div class="bottom-info-btn">
+                <button class="btn share-btn gallery-btn">
+                    <svg width="32" height="32" class="_1xhtJ" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                        <path d="M0 26c0 1.7.2 3.3.6 4.9.2.9.7.9 1 0 2.1-5.3 5.5-10.3 11.1-11.3h3.3v4.4c0 2 1.2 2.6 2.6 1.4l12.8-11c.7-.6.7-1.6 0-2.3l-12.8-11c-1.4-1.3-2.6-.6-2.6 1.3v4.7c-9.6 1.6-16 9.4-16 18.9z"></path>
+                    </svg>
+                    <span>Share</span>
+                </button>
+                <button class="btn info-btn gallery-btn">
+                    <svg width="32" height="32" class="_1rYbs" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                        <path d="M16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zm2 25c0 .6-.4 1-1 1h-2c-.6 0-1-.4-1-1v-12c0-.6.4-1 1-1h2c.6 0 1 .4 1 1v12zm0-16c0 .6-.4 1-1 1h-2c-.6 0-1-.4-1-1v-2c0-.6.4-1 1-1h2c.6 0 1 .4 1 1v2z"></path>
+                    </svg>
+                    <span>Info</span>
+                </button>
+            </div>
+            <button class="btn close-btn">
+                <svg width="32" height="32" class="_3p8U1" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                    <path d="M25.33 8.55l-1.88-1.88-7.45 7.45-7.45-7.45-1.88 1.88 7.45 7.45-7.45 7.45 1.88 1.88 7.45-7.45 7.45 7.45 1.88-1.88-7.45-7.45z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img class="gallery-picture" src="../assets/img/photo_1.jpg" alt="">
+        <div class="gallery-content">
+            <div class="member-gallery-btn">
+                <button class="btn favorite-btn gallery-btn">
+                    <svg width="32" height="32" class="BWSrD" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                        <path d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z"></path>
+                    </svg>
+                </button>
+                <button class="btn collection-btn gallery-btn">
+                    <svg width="32" height="32" class="_2rdbO" version="1.1" viewBox="0 0 32 32"
+                         aria-hidden="false">
+                        <path d="M14 3h4v26h-4zM29 14v4h-26v-4z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="avatar"><a href="#"><img
+                    src="https://images.unsplash.com/profile-1548270728190-4a29bbb0fa81?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                    alt="">
+                Name
+            </a>
+            </div>
+            <button class="btn download-btn gallery-btn">
+                <svg width="32" height="32" class="Apljk" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                    <path d="M25.8 15.5l-7.8 7.2v-20.7h-4v20.7l-7.8-7.2-2.7 3 12.5 11.4 12.5-11.4z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img class="gallery-picture" src="../assets/img/photo_2.jpg" alt="">
+        <div class="gallery-content">
+            <div class="member-gallery-btn">
+                <button class="btn favorite-btn gallery-btn">
+                    <svg width="32" height="32" class="BWSrD" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                        <path d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z"></path>
+                    </svg>
+                </button>
+                <button class="btn collection-btn gallery-btn">
+                    <svg width="32" height="32" class="_2rdbO" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                        <path d="M14 3h4v26h-4zM29 14v4h-26v-4z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="avatar"><a href="#"><img
+                    src="https://images.unsplash.com/profile-1548270728190-4a29bbb0fa81?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                    alt="">
+                Name
+            </a>
+            </div>
+            <button class="btn download-btn gallery-btn">
+                <svg width="32" height="32" class="Apljk" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                    <path d="M25.8 15.5l-7.8 7.2v-20.7h-4v20.7l-7.8-7.2-2.7 3 12.5 11.4 12.5-11.4z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img class="gallery-picture" src="../assets/img/photo_3.jpg" alt="">
+        <div class="gallery-content">
+            <div class="member-gallery-btn">
+                <button class="btn favorite-btn gallery-btn">
+                    <svg width="32" height="32" class="BWSrD" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                        <path d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z"></path>
+                    </svg>
+                </button>
+                <button class="btn collection-btn gallery-btn">
+                    <svg width="32" height="32" class="_2rdbO" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                        <path d="M14 3h4v26h-4zM29 14v4h-26v-4z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="avatar"><a href="#"><img
+                    src="https://images.unsplash.com/profile-1548270728190-4a29bbb0fa81?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                    alt="">
+                Name
+            </a>
+            </div>
+            <button class="btn download-btn gallery-btn">
+                <svg width="32" height="32" class="Apljk" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                    <path d="M25.8 15.5l-7.8 7.2v-20.7h-4v20.7l-7.8-7.2-2.7 3 12.5 11.4 12.5-11.4z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img class="gallery-picture" src="../assets/img/photo_4.jpg" alt="">
+        <div class="gallery-content">
+            <div class="member-gallery-btn">
+                <button class="btn favorite-btn gallery-btn">
+                    <svg width="32" height="32" class="BWSrD" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                        <path d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z"></path>
+                    </svg>
+                </button>
+                <button class="btn collection-btn gallery-btn">
+                    <svg width="32" height="32" class="_2rdbO" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                        <path d="M14 3h4v26h-4zM29 14v4h-26v-4z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="avatar"><a href="#"><img
+                    src="https://images.unsplash.com/profile-1548270728190-4a29bbb0fa81?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                    alt="">
+                Name
+            </a>
+            </div>
+            <button class="btn download-btn gallery-btn">
+                <svg width="32" height="32" class="Apljk" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                    <path d="M25.8 15.5l-7.8 7.2v-20.7h-4v20.7l-7.8-7.2-2.7 3 12.5 11.4 12.5-11.4z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img class="gallery-picture" src="../assets/img/photo_5.jpg" alt="">
+        <div class="gallery-content">
+            <div class="member-gallery-btn">
+                <button class="btn favorite-btn gallery-btn">
+                    <svg width="32" height="32" class="BWSrD" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                        <path d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z"></path>
+                    </svg>
+                </button>
+                <button class="btn collection-btn gallery-btn">
+                    <svg width="32" height="32" class="_2rdbO" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                        <path d="M14 3h4v26h-4zM29 14v4h-26v-4z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="avatar"><a href="#"><img
+                    src="https://images.unsplash.com/profile-1548270728190-4a29bbb0fa81?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                    alt="">
+                Name
+            </a>
+            </div>
+            <button class="btn download-btn gallery-btn">
+                <svg width="32" height="32" class="Apljk" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                    <path d="M25.8 15.5l-7.8 7.2v-20.7h-4v20.7l-7.8-7.2-2.7 3 12.5 11.4 12.5-11.4z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img class="gallery-picture" src="../assets/img/photo_6.jpg" alt="">
+        <div class="gallery-content">
+            <div class="member-gallery-btn">
+                <button class="btn favorite-btn gallery-btn">
+                    <svg width="32" height="32" class="BWSrD" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                        <path d="M17.4 29c-.8.8-2 .8-2.8 0l-12.3-12.8c-3.1-3.1-3.1-8.2 0-11.4 3.1-3.1 8.2-3.1 11.3 0l2.4 2.8 2.3-2.8c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.4l-12.2 12.8z"></path>
+                    </svg>
+                </button>
+                <button class="btn collection-btn gallery-btn">
+                    <svg width="32" height="32" class="_2rdbO" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                        <path d="M14 3h4v26h-4zM29 14v4h-26v-4z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="avatar"><a href="#"><img
+                    src="https://images.unsplash.com/profile-1548270728190-4a29bbb0fa81?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                    alt="">
+                Name
+            </a>
+            </div>
+            <button class="btn download-btn gallery-btn">
+                <svg width="32" height="32" class="Apljk" version="1.1" viewBox="0 0 32 32" aria-hidden="false">
+                    <path d="M25.8 15.5l-7.8 7.2v-20.7h-4v20.7l-7.8-7.2-2.7 3 12.5 11.4 12.5-11.4z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
 </div>
 </body>
 </html>

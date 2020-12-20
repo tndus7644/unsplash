@@ -493,8 +493,6 @@ input {
           border-radius: 4px;
           font-size: 14px;
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
-          .us-header .gnb nav .nav-more .dropdown.is-active {
-            display: block; }
           .us-header .gnb nav .nav-more .dropdown::after {
             content: '';
             background: #111;
@@ -552,91 +550,6 @@ input {
       font-size: 14px;
       margin-right: 32px;
       cursor: pointer; }
-    .us-header .gnb .login-popup {
-      z-index: 100;
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
-      .us-header .gnb .login-popup.is-active {
-        display: flex; }
-      .us-header .gnb .login-popup .contents {
-        width: 900px;
-        height: 670px;
-        background: #fff;
-        border-radius: 4px;
-        text-align: center;
-        color: #111;
-        font-size: 15px;
-        padding: 0 150px; }
-        .us-header .gnb .login-popup .contents .popup-logo {
-          padding: 36px 0; }
-        .us-header .gnb .login-popup .contents .login-info {
-          margin-bottom: 36px; }
-          .us-header .gnb .login-popup .contents .login-info h2 {
-            font-size: 28px;
-            font-weight: 700;
-            padding-bottom: 8px; }
-          .us-header .gnb .login-popup .contents .login-info p {
-            line-height: 1.6; }
-        .us-header .gnb .login-popup .contents .login-facebook {
-          background: #1778f2;
-          height: 44px;
-          margin-bottom: 24px;
-          transition: background 0.2s; }
-          .us-header .gnb .login-popup .contents .login-facebook a {
-            color: #fff;
-            display: flex;
-            align-items: center; }
-            .us-header .gnb .login-popup .contents .login-facebook a svg {
-              margin-right: 12px;
-              fill: #fff; }
-          .us-header .gnb .login-popup .contents .login-facebook:hover {
-            background: #1470e3; }
-        .us-header .gnb .login-popup .contents .email-input {
-          margin: 24px 0; }
-          .us-header .gnb .login-popup .contents .email-input label {
-            text-align: left;
-            display: block;
-            line-height: 1.6; }
-          .us-header .gnb .login-popup .contents .email-input input {
-            width: 100%;
-            height: 40px;
-            background: #fff;
-            padding: 6px 12px;
-            border: 1px solid #767676;
-            border-radius: 4px; }
-        .us-header .gnb .login-popup .contents .password-input {
-          margin-bottom: 24px; }
-          .us-header .gnb .login-popup .contents .password-input label {
-            text-align: left;
-            display: flex;
-            justify-content: space-between;
-            line-height: 1.6; }
-            .us-header .gnb .login-popup .contents .password-input label a {
-              text-decoration: underline; }
-          .us-header .gnb .login-popup .contents .password-input input {
-            width: 100%;
-            height: 40px;
-            background: #fff;
-            padding: 6px 12px;
-            border: 1px solid #767676;
-            border-radius: 4px; }
-        .us-header .gnb .login-popup .contents .login-check {
-          background: #111;
-          color: #fff;
-          margin-bottom: 24px; }
-        .us-header .gnb .login-popup .contents > p span {
-          margin-left: 4px;
-          text-decoration: underline; }
-          .us-header .gnb .login-popup .contents > p span:hover {
-            color: #111; }
     .us-header .gnb .member-area {
       border-left: 1px solid #d1d1d1;
       display: flex; }
@@ -672,5 +585,205 @@ input {
     padding: 0 20px;
     font-size: 14px;
     color: #767676; }
+
+.login-popup {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center; }
+  .login-popup.is-active {
+    display: flex; }
+  .login-popup .login-popup-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1; }
+  .login-popup .contents {
+    width: 900px;
+    height: 670px;
+    background: #fff;
+    border-radius: 4px;
+    text-align: center;
+    padding: 36px 150px; }
+    .login-popup .contents .login-info h2 {
+      margin: 20px 0;
+      font-weight: 500;
+      font-size: 28px; }
+    .login-popup .contents .login-facebook {
+      width: 100%;
+      background: #1778f2;
+      margin: 30px 0; }
+      .login-popup .contents .login-facebook a {
+        color: #fff;
+        display: flex;
+        align-items: center; }
+        .login-popup .contents .login-facebook a svg {
+          margin-right: 12px;
+          fill: #fff; }
+    .login-popup .contents .email-input {
+      text-align: left;
+      margin-bottom: 30px; }
+      .login-popup .contents .email-input label {
+        line-height: 1.6; }
+      .login-popup .contents .email-input input {
+        width: 100%;
+        height: 40px;
+        padding: 5px 7px;
+        border: 1px solid #767676;
+        border-radius: 4px; }
+    .login-popup .contents .password-input {
+      text-align: left; }
+      .login-popup .contents .password-input label {
+        display: flex;
+        line-height: 1.6;
+        justify-content: space-between; }
+        .login-popup .contents .password-input label a {
+          text-decoration: underline;
+          border-style: solid; }
+      .login-popup .contents .password-input input {
+        width: 100%;
+        height: 40px;
+        padding: 5px 7px;
+        border: 1px solid #767676;
+        border-radius: 4px; }
+    .login-popup .contents .login-check {
+      margin: 30px 0;
+      background: #111;
+      width: 100%;
+      color: #fff; }
+
+.main-banner-top {
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1607448421773-f74d4b9b5919?ixid=MXwxMjA3fDB8MHxwaG90by1vZi10aGUtZGF5fHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&dpr=2&auto=format%2Ccompress&fit=crop&w=1399&h=594") 0 0 no-repeat;
+  background-size: cover; }
+  .main-banner-top .banner-contents {
+    padding: 144px 0;
+    width: 50%;
+    margin: 0 auto; }
+    .main-banner-top .banner-contents .banner-caption h1 {
+      color: #fff;
+      font-size: 46px;
+      font-weight: 500; }
+    .main-banner-top .banner-contents .banner-caption p {
+      color: #fff;
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 18px 0 24px; }
+    .main-banner-top .banner-contents .search-photos label {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      width: 90%;
+      padding: 10px 15px;
+      border-radius: 4px;
+      height: 54px; }
+      .main-banner-top .banner-contents .search-photos label .search-photos-icon {
+        fill: #767676;
+        margin-right: 12px; }
+      .main-banner-top .banner-contents .search-photos label input {
+        width: 100%;
+        outline: none; }
+    .main-banner-top .banner-contents .trending-link {
+      display: flex;
+      font-size: 15px;
+      margin-top: 16px; }
+      .main-banner-top .banner-contents .trending-link p {
+        color: #fff; }
+      .main-banner-top .banner-contents .trending-link ul {
+        display: flex; }
+        .main-banner-top .banner-contents .trending-link ul li a {
+          color: #ffffffcc;
+          padding: 0 3px;
+          transition: 0.2s; }
+          .main-banner-top .banner-contents .trending-link ul li a:hover {
+            color: #fff; }
+  .main-banner-top .bottom-caption {
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    font-size: 13px;
+    padding: 20px;
+    width: 100%; }
+    .main-banner-top .bottom-caption .photo-writer {
+      color: #ffffffcc; }
+      .main-banner-top .bottom-caption .photo-writer span {
+        color: #ffffff8c; }
+      .main-banner-top .bottom-caption .photo-writer a {
+        color: #ffffffcc;
+        transition: 0.2s; }
+        .main-banner-top .bottom-caption .photo-writer a:hover {
+          color: #fff; }
+    .main-banner-top .bottom-caption .license-read-more {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      color: #ffffff8c; }
+      .main-banner-top .bottom-caption .license-read-more a {
+        color: #ffffffcc;
+        transition: 0.2s;
+        margin: 0 3px; }
+        .main-banner-top .bottom-caption .license-read-more a:hover {
+          color: #fff; }
+    .main-banner-top .bottom-caption .squarespace-link {
+      text-align: right; }
+      .main-banner-top .bottom-caption .squarespace-link img {
+        max-width: 150px; }
+      .main-banner-top .bottom-caption .squarespace-link a {
+        display: block;
+        margin-top: 5px;
+        color: #ffffffcc;
+        transition: 0.2s; }
+        .main-banner-top .bottom-caption .squarespace-link a:hover {
+          color: #fff; }
+
+.gallery {
+  max-width: 83rem;
+  margin: 36px auto 0;
+  display: flex;
+  flex-wrap: wrap; }
+
+.gallery-item {
+  position: relative;
+  margin: 12px;
+  height: 100%;
+  width: 416px; }
+  .gallery-item:hover .gallery-content {
+    opacity: 1; }
+  .gallery-item .gallery-picture {
+    cursor: pointer; }
+  .gallery-item .gallery-content {
+    transition: 0.2s;
+    opacity: 0; }
+    .gallery-item .gallery-content .member-gallery-btn {
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: 0.2s;
+      display: flex; }
+      .gallery-item .gallery-content .member-gallery-btn .favorite-btn {
+        margin-right: 8px; }
+    .gallery-item .gallery-content .avatar {
+      margin: 20px;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+      .gallery-item .gallery-content .avatar a {
+        color: #fff; }
+      .gallery-item .gallery-content .avatar img {
+        border-radius: 50%;
+        margin-right: 8px; }
+    .gallery-item .gallery-content .download-btn {
+      margin: 20px;
+      position: absolute;
+      bottom: 0;
+      right: 0; }
 
 /*# sourceMappingURL=style.css.map */
