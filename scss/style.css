@@ -736,6 +736,8 @@ input {
             width: 24px; }
           .gallery-popup .gallery-popup-contents .top-info .gallery-popup-info-btn .download-free-btn:hover {
             background: #33a763; }
+          .gallery-popup .gallery-popup-contents .top-info .gallery-popup-info-btn .download-free-btn:active {
+            background: #299255; }
     .gallery-popup .gallery-popup-contents .img-contents {
       height: 60%;
       display: flex;
