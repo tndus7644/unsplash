@@ -157,6 +157,13 @@
 
           p {
             font-size: 13px;
+            transition: 0.2s;
+          }
+
+          &:hover{
+            p{
+              color: #111;
+            }
           }
         }
       }

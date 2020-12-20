@@ -713,7 +713,10 @@ input {
         .gallery-popup .gallery-popup-contents .top-info .member-info .member-account-name span {
           color: #111; }
         .gallery-popup .gallery-popup-contents .top-info .member-info .member-account-name p {
-          font-size: 13px; }
+          font-size: 13px;
+          transition: 0.2s; }
+        .gallery-popup .gallery-popup-contents .top-info .member-info .member-account-name:hover p {
+          color: #111; }
       .gallery-popup .gallery-popup-contents .top-info .gallery-popup-info-btn {
         display: flex; }
         .gallery-popup .gallery-popup-contents .top-info .gallery-popup-info-btn .gallery-btn {
