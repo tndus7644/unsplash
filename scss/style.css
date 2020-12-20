@@ -507,7 +507,7 @@ input {
           padding: 10px 0;
           border-radius: 4px;
           font-size: 14px;
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
           .us-header .gnb nav .nav-more .dropdown.is-active {
             display: block; }
           .us-header .gnb nav .nav-more .dropdown::after {
