@@ -437,6 +437,9 @@ input {
     align-items: center; }
     .us-header .logo .logo-title {
       margin: 0 18px; }
+      @media screen and (max-width: 1200px) {
+        .us-header .logo .logo-title {
+          display: none; } }
       .us-header .logo .logo-title h1 {
         font-size: 15px;
         color: #111;
@@ -468,6 +471,9 @@ input {
   .us-header .gnb {
     display: flex;
     align-items: center; }
+    @media screen and (max-width: 768px) {
+      .us-header .gnb {
+        display: none; } }
     .us-header .gnb nav {
       display: flex;
       align-items: center;
@@ -567,6 +573,9 @@ input {
       font-size: 14px;
       margin-right: 32px;
       cursor: pointer; }
+      @media screen and (max-width: 990px) {
+        .us-header .gnb .submit-photo span {
+          display: none; } }
     .us-header .gnb .member-area {
       border-left: 1px solid #d1d1d1;
       display: flex; }
@@ -575,6 +584,16 @@ input {
       .us-header .gnb .member-area .btn-login {
         margin: 0 14px;
         color: #767676; }
+  .us-header .mobile-menu {
+    display: none;
+    cursor: pointer; }
+    @media screen and (max-width: 768px) {
+      .us-header .mobile-menu {
+        display: flex;
+        padding: 5px;
+        margin-left: 10px; }
+        .us-header .mobile-menu svg {
+          fill: #767676; } }
 
 .lnb {
   display: flex;

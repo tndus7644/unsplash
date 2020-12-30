@@ -12,6 +12,10 @@
     .logo-title {
       margin: 0 18px;
 
+      @include screen-lg{
+        display: none;
+      }
+
       h1 {
         font-size: 15px;
         color: #111;
@@ -59,6 +63,9 @@
   .gnb {
     display: flex;
     align-items: center;
+    @include screen-sm{
+      display: none;
+    }
 
     nav {
       display: flex;
@@ -197,6 +204,12 @@
       font-size: 14px;
       margin-right: 32px;
       cursor: pointer;
+
+      span{
+        @include screen-md{
+          display: none;
+        }
+      }
     }
 
     .member-area {
@@ -212,6 +225,19 @@
         color: #767676;
       }
 
+    }
+  }
+
+  .mobile-menu{
+    display: none;
+    cursor: pointer;
+    @include screen-sm{
+      display: flex;
+      padding: 5px;
+      margin-left: 10px;
+      svg{
+        fill: #767676;
+      }
     }
   }
 }
