@@ -801,6 +801,9 @@ input {
         width: 100%;
         margin: 0;
         padding: 80px 20px 60px; } }
+    @media screen and (max-width: 495px) {
+      .main-banner-top .banner-contents {
+        padding: 32px 12px; } }
     .main-banner-top .banner-contents .banner-caption h1 {
       color: #fff;
       font-size: 46px;
@@ -861,8 +864,14 @@ input {
     @media screen and (max-width: 990px) {
       .main-banner-top .bottom-caption {
         justify-content: space-between; } }
+    @media screen and (max-width: 495px) {
+      .main-banner-top .bottom-caption {
+        padding: 20px 12px; } }
     .main-banner-top .bottom-caption .photo-writer {
       color: #ffffffcc; }
+      @media screen and (max-width: 495px) {
+        .main-banner-top .bottom-caption .photo-writer {
+          display: none; } }
       .main-banner-top .bottom-caption .photo-writer span {
         color: #ffffff8c; }
       .main-banner-top .bottom-caption .photo-writer a {
@@ -886,6 +895,9 @@ input {
           color: #fff; }
     .main-banner-top .bottom-caption .squarespace-link {
       text-align: right; }
+      @media screen and (max-width: 495px) {
+        .main-banner-top .bottom-caption .squarespace-link {
+          text-align: left; } }
       .main-banner-top .bottom-caption .squarespace-link img {
         max-width: 150px; }
       .main-banner-top .bottom-caption .squarespace-link a {
