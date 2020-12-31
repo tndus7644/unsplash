@@ -11,6 +11,10 @@ input {
   border: none;
 }
 
-::-webkit-scrollbar {
-  display: none;
+.lnb{
+  .topics{
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
