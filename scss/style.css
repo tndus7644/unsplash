@@ -429,7 +429,7 @@ input {
 .us-header {
   display: flex;
   align-items: center;
-  padding: 11px 20px;
+  padding: 8px 20px;
   background: #fff; }
   .us-header .logo {
     margin-right: 12px;
@@ -478,6 +478,9 @@ input {
       display: flex;
       align-items: center;
       padding: 0 36px; }
+      @media screen and (max-width: 990px) {
+        .us-header .gnb nav {
+          padding: 0 10px; } }
       .us-header .gnb nav .nav-link {
         font-size: 14px;
         text-transform: capitalize;
@@ -578,7 +581,8 @@ input {
           display: none; } }
     .us-header .gnb .member-area {
       border-left: 1px solid #d1d1d1;
-      display: flex; }
+      display: flex;
+      text-align: center; }
       .us-header .gnb .member-area .btn {
         text-transform: capitalize; }
       .us-header .gnb .member-area .btn-login {
@@ -621,6 +625,9 @@ input {
     padding: 0 20px;
     font-size: 14px;
     color: #767676; }
+    @media screen and (max-width: 768px) {
+      .lnb .all {
+        display: none; } }
 
 .login-popup {
   position: fixed;
