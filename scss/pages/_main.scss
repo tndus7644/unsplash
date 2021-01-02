@@ -177,9 +177,10 @@
 
 //gallery
 .gallery {
-  max-width: 83rem;
+  max-width: 1320px;
   margin: 36px auto 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -188,7 +189,7 @@
   position: relative;
   margin: 12px;
   height: 100%;
-  width: 416px;
+  width: 410px;
 
   &:hover {
     .gallery-content {
@@ -198,6 +199,7 @@
 
   .gallery-picture{
     cursor: pointer;
+    width: 100%;
   }
 
   .gallery-content {
