@@ -106,7 +106,6 @@
     @include screen-md{
       justify-content: space-between;
     }
-
     @include screen-xs{
       padding: 20px 12px;
     }
@@ -178,10 +177,15 @@
 //gallery
 .gallery {
   max-width: 1320px;
-  margin: 36px auto 0;
+  margin: 36px auto;
+  overflow: hidden;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-flow: wrap;
+
+  @include screen-lg{
+    max-width: 1200px;
+  }
 }
 
 
@@ -190,6 +194,12 @@
   margin: 12px;
   height: 100%;
   width: 410px;
+  display: inline-block;
+  float: left;
+
+  @include screen-lg{
+    width: 30%;
+  }
 
   &:hover {
     .gallery-content {
@@ -199,7 +209,6 @@
 
   .gallery-picture{
     cursor: pointer;
-    width: 100%;
   }
 
   .gallery-content {
