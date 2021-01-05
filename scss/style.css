@@ -923,21 +923,29 @@ input {
 
 .gallery {
   max-width: 1320px;
-  margin: 36px auto 0;
+  margin: 36px auto;
+  overflow: hidden;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-flow: wrap; }
+  @media screen and (max-width: 1200px) {
+    .gallery {
+      max-width: 1200px; } }
 
 .gallery-item {
   position: relative;
   margin: 12px;
   height: 100%;
-  width: 410px; }
+  width: 410px;
+  display: inline-block;
+  float: left; }
+  @media screen and (max-width: 1200px) {
+    .gallery-item {
+      width: 30%; } }
   .gallery-item:hover .gallery-content {
     opacity: 1; }
   .gallery-item .gallery-picture {
-    cursor: pointer;
-    width: 100%; }
+    cursor: pointer; }
   .gallery-item .gallery-content {
     transition: 0.2s;
     opacity: 0; }
