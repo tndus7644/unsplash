@@ -178,7 +178,6 @@
 .gallery {
   max-width: 1320px;
   margin: 36px auto;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   flex-flow: wrap;
@@ -186,19 +185,31 @@
   @include screen-lg{
     max-width: 1200px;
   }
+
+  @include screen-md{
+    max-width: 990px;
+  }
 }
 
 
 .gallery-item {
   position: relative;
-  margin: 12px;
+  margin: 1%;
   height: 100%;
   width: 410px;
   display: inline-block;
-  float: left;
 
   @include screen-lg{
     width: 30%;
+  }
+
+  @include screen-md{
+    width: 44%;
+  }
+
+  @include screen-sm{
+    width: 100%;
+    margin: 0;
   }
 
   &:hover {
@@ -209,6 +220,7 @@
 
   .gallery-picture{
     cursor: pointer;
+    width: 100%;
   }
 
   .gallery-content {
